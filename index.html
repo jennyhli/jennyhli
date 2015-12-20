@@ -1,17 +1,44 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1348.17">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">Hello World<span class="Apple-converted-space"> </span></span></p>
-</body>
-</html>
+
+<!DOCTYPE html><html class=no-js><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><title>Rotate°</title><meta name=description content="Rotate are a London based design and development parnership with 15 combined years digital experience. We work directly with small brands and business’s to create high quality digital products from websites to mobile applications and more."><meta name=viewport content="initial-scale=1, user-scalable=no, minimal-ui"><link rel=stylesheet href=css/styles.css><script src=//use.typekit.net/msh0pbb.js></script><script>try{Typekit.load();}catch(e){}</script></head><body><div class=container><div class=info></div><div class=rotate><div class=rotate__faces><div class=rotate__face--front><h1 class=logo>Rotate°</h1><div class=contact><a href=mailto:hello@studiorotate.com>hello@studiorotate.com</a> <a href=http://twitter.com/studiorotate target=_blank>@studioRotate</a> <a href="tel:+44 (0) 203 4880 130">+44 (0) 203 4880 130</a></div></div><div class=rotate__face--side><p class=body><em>Rotate</em> are a London based design and development partnership with 15 combined years digital experience. We work directly with small brands and businesses to create high quality digital products from websites to mobile applications and more.</p><h2 class=logo--alt>Rotate°</h2><div class=contact><a href=mailto:hello@studiorotate.com>hello@studiorotate.com</a> <a href=http://twitter.com/studiorotate target=_blank>@studioRotate</a> <a href="tel:+44 (0) 203 4880 130">+44 (0) 203 4880 130</a></div></div></div></div><div class=photoCredit>Photography · <a href=http://superfamous.com/designarchive target=_blank class=photoCredit__link>Superfamous</a></div></div><script src=js/vendor.js></script><script>
+			function has3d() {
+			    var el = document.createElement('p'), 
+			        has3d,
+			        transforms = {
+			            'webkitTransform':'-webkit-transform',
+			            'OTransform':'-o-transform',
+			            'msTransform':'-ms-transform',
+			            'MozTransform':'-moz-transform',
+			            'transform':'transform'
+			        };
+
+			    // Add it to the body to get the computed style.
+			    document.body.insertBefore(el, null);
+
+			    for (var t in transforms) {
+			        if (el.style[t] !== undefined) {
+			            el.style[t] = "translate3d(1px,1px,1px)";
+			            has3d = window.getComputedStyle(el).getPropertyValue(transforms[t]);
+			        }
+			    }
+
+			    document.body.removeChild(el);
+			    return (has3d !== undefined && has3d.length > 0 && has3d !== "none");
+			}
+			is3d = has3d();
+			
+			$( document ).ready(function(){
+				if(is3d){
+					$('html').addClass('csstransforms3d');
+				}
+				$('.info').click(function(){
+					$('.rotate__faces, .info').toggleClass('is--turned');
+				});
+			});
+
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+
+        </script></body></html>
