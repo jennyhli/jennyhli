@@ -256,6 +256,9 @@
 li {
 	color: #666;
 	margin-left: 30px;
-	font-size: 24px;
+	font-size: 20px;
 	font-style: italic;
+	a {
+		color: #fff;
+	}
 }
