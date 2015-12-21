@@ -258,7 +258,8 @@ li {
 	margin-left: 30px;
 	font-size: 20px;
 	font-style: italic;
-	a {
-		color: #fff;
-	}
+}
+
+li a {
+	color: #fff;
 }
