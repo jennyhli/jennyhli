@@ -254,7 +254,8 @@
 }
 
 li {
-	color: #666;
+	color: #fff;
+	opacity: 0.5;
 	margin-left: 30px;
 	font-size: 20px;
 	font-style: italic;
@@ -262,4 +263,5 @@ li {
 
 li a {
 	color: #fff;
+	opacity: 1;
 }
