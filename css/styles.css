@@ -222,7 +222,7 @@
 
 .body em {
     font-style: italic;
-    color: #666
+    color: #fff
 }
 
 @media screen and (min-width: 600px) {
@@ -254,7 +254,8 @@
 }
 
 li {
-	color: #fff;
-	margin-left: 80px;
+	color: #666;
+	margin-left: 30px;
 	font-size: 24px;
+	font-style: italic;
 }
