@@ -31,6 +31,10 @@
     content: ''
 }
 
+ul {
+    padding-left: 20px;
+}
+
 @media screen and (min-width: 600px) {
     .info {
         top: 30px;
